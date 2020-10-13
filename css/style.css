@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body{
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: pink;
+  display: flex;
+}
+
+#play {
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 0;
+}
+
+
+
+#navcover{
+  width: 20%;
+  height: calc(100vh - 100px);
+  background-color: orange;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+}
+
+#maincover{
+  width: 80%;
+  height: calc(100vh - 100px);
+  background-color: grey;
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  overflow-y: scroll;
+}
+
+#brow{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+}
+
+p{
+  font-size: 50px;
+}
