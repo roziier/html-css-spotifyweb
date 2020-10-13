@@ -19,19 +19,18 @@
   bottom: 0;
 }
 
-
-
 #navcover{
-  width: 20%;
+  width: 18%;
   height: calc(100vh - 100px);
-  background-color: orange;
+  background-color: black;
   position: fixed;
   bottom: 100px;
   left: 0;
+
 }
 
 #maincover{
-  width: 80%;
+  width: 82%;
   height: calc(100vh - 100px);
   background-color: grey;
   position: fixed;
@@ -43,11 +42,82 @@
 #brow{
   width: 100%;
   height: 80px;
-  background-color: black;
+  background-color: #070B12;
   position: fixed;
   top: 0;
 }
 
-p{
-  font-size: 50px;
+#column{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navtext{
+  width: 100%;
+
+
+  
+  color: white;
+  color: #727272;
+}
+
+#playlist{
+ height: 420px;
+ padding-left: 10px;
+}
+
+#playlist h6{
+ font-size: 16px;
+ margin: 8px auto;
+ color: white;
+}
+
+
+#playlist i{
+  font-size: 45px;
+  margin-right: 5px;
+}
+
+#playlist li{
+  list-style: none;
+  margin: 8px auto;
+}
+
+
+#logo{
+  height: 70px;
+}
+
+#logo img{
+  width: 70%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#home{
+  height: 120px;
+  list-style: none;
+}
+
+#home li{
+  margin: 10px;
+  list-style: none;
+}
+
+#home li:hover,
+#playlist li:hover{
+  color: white;
+}
+
+#home i{
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#utname{
+  height: 85px;
+  position: fixed;
+  bottom: 95px;
+  background-color: black;
 }
