@@ -14,9 +14,10 @@
 #play {
   width: 100%;
   height: 100px;
-  background-color: lightgreen;
+  background-color: #282828;
   position: fixed;
   bottom: 0;
+  display: flex;
 }
 
 #navcover{
@@ -57,7 +58,7 @@
   width: 100%;
 
 
-  
+
   color: white;
   color: #727272;
 }
@@ -120,4 +121,13 @@
   position: fixed;
   bottom: 95px;
   background-color: black;
+}
+
+.playbox{
+  width: calc(100%/3);
+  border: 1px solid white;
+}
+
+#playbar{
+  flex-grow: 2;
 }
