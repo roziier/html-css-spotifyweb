@@ -33,7 +33,7 @@
 #maincover{
   width: 82%;
   height: calc(100vh - 100px);
-  background-color: grey;
+  background-color: #141922;
   position: fixed;
   right: 0;
   bottom: 100px;
@@ -124,7 +124,7 @@
 }
 
 .playbox{
-  width: calc(100%/3);
+  min-width: 258px;
   border: 1px solid white;
 }
 
