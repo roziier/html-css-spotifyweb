@@ -41,11 +41,25 @@
 }
 
 #brow{
-  width: 100%;
+  width: 82%;
   height: 80px;
-  background-color: #070B12;
+
+  background: rgba(20, 25, 34, 0.5);
+  color: white;
   position: fixed;
   top: 0;
+}
+
+#upgrade{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  width: 18%;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px;
+  height: 40px;
+  text-align: center;
 }
 
 #column{
@@ -56,9 +70,6 @@
 
 .navtext{
   width: 100%;
-
-
-
   color: white;
   color: #727272;
 }
