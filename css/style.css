@@ -21,7 +21,7 @@
 }
 
 #navcover{
-  width: 18%;
+  width: 12%;
   height: calc(100vh - 100px);
   background-color: black;
   position: fixed;
@@ -31,20 +31,20 @@
 }
 
 #maincover{
-  width: 82%;
+  width: 88%;
   height: calc(100vh - 100px);
   background-color: #141922;
   position: fixed;
   right: 0;
   bottom: 100px;
   overflow-y: scroll;
+
 }
 
 #brow{
-  width: 82%;
+  width: 88%;
   height: 80px;
-
-  background: rgba(20, 25, 34, 0.5);
+  background: rgba(7, 11, 18, 0.7);
   color: white;
   position: fixed;
   top: 0;
@@ -141,4 +141,53 @@
 
 #playbar{
   flex-grow: 2;
+}
+
+#container{
+  min-height: 50px;
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.block{
+  min-height: 50px;
+  border: 1px solid white;
+  min-width: 100px;
+  color: white;
+}
+
+.container1{
+  min-height: 50px;
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container2{
+  min-height: 50px;
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block li{
+  display: inline-block;
+  list-style: none;
+  padding-right: 12px;
+  font-size: 12px;
+  color: grey;
+  margin-top: 8px;
+}
+
+.block img{
+  width: 170px;
+  height: 170px;
+
 }
