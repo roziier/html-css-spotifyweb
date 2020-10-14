@@ -153,6 +153,8 @@
   background-color: black;
 }
 
+
+
 .playbox{
   width: 20%;
   display: flex;
@@ -459,21 +461,21 @@ p{
     flex-direction: column;
     justify-content: flex-start;
     color: white;
+    text-align: center;
   }
 
   #top img{
-    width: 80%;
-    margin: auto;
-    height: 50px;
-    margin-top: 10px;
+    width: 65%;
+    margin: 15px auto;
+    height: 30px;
   }
 
   #top i{
-    width: 80%;
-    font-size: 30px;
+    width: 75%;
+    font-size: 25px;
     margin: auto;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 4px;
   }
 
 
@@ -508,6 +510,21 @@ p{
     height: 42px;
     margin-left: 12px;
   }
+
+  #top img{
+    width: 60%;
+    margin: 15px auto;
+    height: 25px;
+  }
+
+  #top i{
+    width: 65%;
+    
+    margin: auto;
+    height: 30px;
+    margin-top: 4px;
+  }
+
 
 }
 
