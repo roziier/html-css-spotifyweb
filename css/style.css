@@ -7,7 +7,7 @@
 #body{
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: pink;
+  background-color: black;
   display: flex;
 }
 
@@ -18,6 +18,7 @@
   position: fixed;
   bottom: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 #navcover{
@@ -44,10 +45,11 @@
 #brow{
   width: 88%;
   height: 80px;
-  background: rgba(7, 11, 18, 0.7);
+  background: rgba(7, 11, 18, 0.8);
   color: white;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 #upgrade{
@@ -139,25 +141,25 @@
 }
 
 .playbox{
-  min-width: 258px;
-  border: 1px solid white;
+  /* min-width: 258px;
+  border: 1px solid white; */
   display: flex;
   justify-content: flex-start;
 }
 
 #blockplayimg{
-  min-height: 50px;
-  border: 1px solid white;
-  min-width: 40px;
+  /* min-height: 50px;
+  border: 1px solid white; */
+  /* width: 100%; */
   color: white;
   display: flex;
   align-items: center;
 }
 
 .blockplay{
-  min-height: 50px;
-  border: 1px solid white;
-  min-width: 40px;
+  /* min-height: 50px;
+  border: 1px solid white; */
+  width: 25%;
   color: white;
   font-size: 16px;
 }
@@ -186,12 +188,12 @@
 }
 
 #playbar{
-  flex-grow: 2;
+  width: 50%;
 }
 
 #container{
-  min-height: 50px;
-  border: 1px solid white;
+  /* min-height: 50px;
+  border: 1px solid white; */
   width: 100%;
   margin-top: 80px;
   display: flex;
@@ -199,16 +201,19 @@
 }
 
 .block{
-  min-height: 50px;
+  /* min-height: 50px;
   border: 1px solid white;
-  min-width: 100px;
+  min-width: 100px; */
   color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto 14px;
 }
 
 .container1{
-  min-height: 50px;
-  border: 1px solid white;
+  /* min-height: 50px;
+  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   display: flex;
@@ -216,12 +221,13 @@
 }
 
 #container2{
-  min-height: 50px;
-  border: 1px solid white;
+  /* min-height: 50px;
+  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+
 }
 
 .block li{
@@ -273,12 +279,10 @@
   opacity: 1;
 }
 
+
 .middle i{
   font-size: 50px;
 }
-
-
-
 
 .icon h4{
   color: white;
@@ -292,8 +296,8 @@
 }
 
 #container3{
-  min-height: 50px;
-  border: 1px solid white;
+  /* min-height: 50px;
+  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   display: flex;
@@ -311,10 +315,10 @@ p{
 }
 
 #button{
-  min-width: 50%;
+  /* min-width: 50%; */
   margin: auto;
-  border: 1px solid red;
-  height: 50%;
+  /* border: 1px solid red; */
+  /* height: 50%; */
   text-align: center;
 }
 
@@ -329,4 +333,112 @@ p{
   height: 3px;
   width: 30%;
   border-top: 3px solid grey;
+}
+
+#volume{
+  width: 110px;
+  margin: 54px 10px;
+  border: 2px solid grey;
+  border-radius: 1px;
+}
+
+#container3 .radius{
+  border-radius: 50%;
+}
+
+@media all and (max-width: 630px) {
+
+  .block img{
+    width: 300px;
+    height: 300px;
+  }
+
+  #navcover{
+    width: 15%;
+  }
+
+  #column{
+    display: none;
+  }
+
+  #maincover{
+    width: 85%;
+  }
+
+  #brow{
+    width: 85%;
+  }
+}
+
+@media all and (min-width: 631px) and (max-width: 776px) {
+
+  .block img{
+    width: 300px;
+    height: 300px;
+  }
+
+
+
+
+  #navcover{
+    width: 12%;
+  }
+
+  #column{
+    display: none;
+  }
+
+  #maincover{
+    width: 88%;
+  }
+
+  #brow{
+    width: 88%;
+  }
+
+}
+
+@media all and (max-width: 995px) {
+
+  #navcover{
+    width: 8%;
+  }
+
+  #column{
+    display: none;
+  }
+
+  #maincover{
+    width: 92%;
+  }
+
+  #brow{
+    width: 92%;
+  }
+
+
+  #container2{
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .block img{
+    width: 180px;
+    height: 180px;
+  }
+
+}
+
+@media all and (min-width: 996px) and (max-width: 1250px) {
+
+  #container2{
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #playbar{
+    flex-grow: 1;
+  }
+
+
 }
