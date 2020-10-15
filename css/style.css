@@ -168,69 +168,38 @@
   margin-top: 40px;
 }
 
-
-
-
-
-/* .playbox{
-  width: 20%;
-  display: flex;
-  justify-content: flex-start;
-  /* min-width: 258px;
-  border: 1px solid white; */
-
-
-/* #blockplayimg{
-  min-height: 50px;
-  border: 1px solid white;
-  width: 100%;
-  color: white;
-  display: flex;
-
-  align-items: center;
-} */
-
-/* .blockplay{
-  min-height: 60px;
-  border: 1px solid white;
-  color: white;
-  font-size: 16px;
-} */
-
-/* .blockplay h6{
-  margin-top: 50px;
-  margin-left: 10px;
-} */
-
-/* .blockplay div{
-  font-size: 12px;
-  margin-left: 10px;
-} */
-
-/* .blockplay i{
-  margin-left: 20px;
-  margin-top: 50px;
-} */
-
-
-/* #blockplayimg img{
-  width: 60px;
-  height: 60px;
-  margin-left: 20px;
-} */
-
 #playbar{
   width: 40%;
-  border: 1px solid white;
+
 }
 
 .playbox1{
   width: 30%;
-  border: 1px solid white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
+.playbox2{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.playbox2 i{
+  color: white;
+  margin-right: 30px;
+}
+
+#vol {
+  height: 4px;
+  width: 110px;
+  background-color: grey;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
 
 .playbox1 img{
   width: 80px;
@@ -253,11 +222,33 @@
   margin-left: 30px;
 }
 
+.fifty{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.fifty i{
+  color: white;
+  margin-right: 15px;
+}
+
+#min {
+  height: 3px;
+  width: 280px;
+  background-color: grey;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.fifty#small{
+  font-size: 10px;
+  color: white;
+}
 
 #container{
-  /* min-height: 50px;
-  border: 1px solid white; */
   width: 100%;
   margin-top: 80px;
   display: flex;
@@ -265,9 +256,6 @@
 }
 
 .block{
-  /* min-height: 50px;
-  border: 1px solid white;
-  min-width: 100px; */
   color: white;
   position: relative;
   display: flex;
@@ -276,8 +264,6 @@
 }
 
 .container1{
-  /* min-height: 50px;
-  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   margin-bottom: 35px;
@@ -286,8 +272,6 @@
 }
 
 #container2{
-  /* min-height: 50px;
-  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   display: flex;
@@ -361,8 +345,6 @@
 }
 
 #container3{
-  /* min-height: 50px;
-  border: 1px solid white; */
   width: 100%;
   margin-top: 5px;
   display: flex;
@@ -380,10 +362,7 @@ p{
 }
 
 #button{
-  /* min-width: 50%; */
   margin: auto;
-  /* border: 1px solid red; */
-  /* height: 50%; */
   text-align: center;
 }
 
@@ -421,7 +400,6 @@ p{
 }
 
 .maron i{
-
   margin-top: 50px;
   margin-left: 15px;
   margin-right: 10px;
@@ -432,10 +410,6 @@ p{
 #container3 .radius{
   border-radius: 50%;
 }
-
-
-
-
 
 
 @media all and (min-width: 996px) and (max-width: 1250px) {
@@ -454,9 +428,6 @@ p{
     height: 50px;
     margin-left: 15px;
   }
-
-
-
 
 }
 
@@ -510,22 +481,21 @@ p{
     flex-direction: column;
     justify-content: flex-start;
     color: white;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   #top img{
-    width: 65%;
-    margin: 15px auto;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
   }
 
   #top i{
-    width: 75%;
-    font-size: 25px;
-    margin: auto;
-    height: 50px;
-    margin-top: 4px;
+    font-size: 30px;
+    margin-top: 20px;
   }
+
 
   .playbox1 ul{
     margin-left: 10px;
@@ -543,6 +513,29 @@ p{
   }
 
 
+  .playbox2 i{
+    color: white;
+    margin-right: 18px;
+  }
+
+  #vol {
+    height: 4px;
+    width: 110px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+
+  #min {
+    height: 3px;
+    width: 220px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+
 }
 
 @media all and (min-width: 631px) and (max-width: 776px) {
@@ -553,7 +546,7 @@ p{
   }
 
   #navcover{
-    width: 12%;
+    width: 8%;
   }
 
   #column{
@@ -561,11 +554,11 @@ p{
   }
 
   #maincover{
-    width: 88%;
+    width: 92%;
   }
 
   #brow{
-    width: 88%;
+    width: 92%;
   }
 
   #upgrade{
@@ -578,20 +571,14 @@ p{
     margin-left: 12px;
   }
 
-  #top img{
-    width: 60%;
-    margin: 15px auto;
-    height: 25px;
+  #min {
+    height: 3px;
+    width: 170px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 12px;
+    margin-left: 12px;
   }
-
-  #top i{
-    width: 65%;
-
-    margin: auto;
-    height: 30px;
-    margin-top: 4px;
-  }
-
 
 }
 
@@ -619,7 +606,7 @@ p{
   }
 
   #upgrade{
-    width: 39%;
+    width: 35%;
     font-size: 10px;
     padding: 12px 0;
 
@@ -628,6 +615,29 @@ p{
   #blockplayimg img{
     width: 38px;
     height: 38px;
+    margin-left: 8px;
+  }
+
+  .playbox2 i{
+    color: white;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  #vol {
+    height: 4px;
+    width: 110px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+
+  #min {
+    height: 3px;
+    width: 150px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 8px;
     margin-left: 8px;
   }
 }
@@ -640,7 +650,21 @@ p{
     height: 190px;
   }
 
-  #container2{
+  #top img{
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+  }
+
+  #top i{
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+
+
+  #container2,
+  #container3{
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
     overflow-y: hidden;
@@ -652,13 +676,13 @@ p{
 
 
   #upgrade{
-    width: 42%;
-    font-size: 12px;
+    width: 46%;
+    font-size: 10px;
     padding: 12px 0;
   }
 
   .playbox1 ul{
-    margin-left: 5px;
+    display: none;
   }
 
   .playbox1 h6{
@@ -669,6 +693,31 @@ p{
   .playbox1 img{
     width: 40px;
     height: 40px;
+    margin-left: 4px;
+  }
+
+  .playbox2 i{
+    color: white;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+  #vol{
+    display: none;
+  }
+
+  .fifty i{
+    color: white;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+  #min {
+    height: 3px;
+    width: 120px;
+    background-color: grey;
+    border-radius: 2px;
+    margin-right: 4px;
     margin-left: 4px;
   }
 
