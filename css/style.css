@@ -19,7 +19,7 @@
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 #navcover{
@@ -89,6 +89,7 @@
 #playlist{
  height: 420px;
  padding-left: 10px;
+ overflow-y: scroll;
 }
 
 #playlist h6{
@@ -109,8 +110,8 @@
   margin: 8px 10px;
 }
 
-#home li:hover,
-#playlist li:hover {
+#home li:hover
+{
   border-left: 4px solid #ADFF2E;
 }
 
@@ -153,57 +154,80 @@
   background-color: black;
 }
 
+#install{
+  width: 80%;
+  margin: auto;
+  height: 40px;
+
+  border-bottom: 1px solid grey;
+  padding-top: 14px;
+}
+
+#id{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+
+}
 
 
-.playbox{
+
+/* .playbox{
   width: 20%;
   display: flex;
   justify-content: flex-start;
   /* min-width: 258px;
   border: 1px solid white; */
-}
 
-#blockplayimg{
-  /* min-height: 50px; */
+
+/* #blockplayimg{
+  min-height: 50px;
   border: 1px solid white;
-  /* width: 100%; */
+  width: 100%;
   color: white;
   display: flex;
 
   align-items: center;
-}
+} */
 
-.blockplay{
+/* .blockplay{
   min-height: 60px;
   border: 1px solid white;
   color: white;
   font-size: 16px;
-}
+} */
 
-.blockplay h6{
+/* .blockplay h6{
   margin-top: 50px;
   margin-left: 10px;
-}
+} */
 
-.blockplay div{
+/* .blockplay div{
   font-size: 12px;
   margin-left: 10px;
-}
+} */
 
-.blockplay i{
+/* .blockplay i{
   margin-left: 20px;
   margin-top: 50px;
-}
+} */
 
 
-#blockplayimg img{
+/* #blockplayimg img{
   width: 60px;
   height: 60px;
   margin-left: 20px;
-}
+} */
 
 #playbar{
-  width: 60%;
+  width: 40%;
+  border: 1px solid white;
+}
+
+.playbox{
+  width: 30%;
+  border: 1px solid white;
+
 }
 
 #container{
@@ -483,7 +507,10 @@ p{
 
 @media all and (min-width: 631px) and (max-width: 776px) {
 
-
+  .block img{
+    width: 150px;
+    height: 150px;
+  }
 
   #navcover{
     width: 12%;
@@ -519,7 +546,7 @@ p{
 
   #top i{
     width: 65%;
-    
+
     margin: auto;
     height: 30px;
     margin-top: 4px;
@@ -528,7 +555,7 @@ p{
 
 }
 
-@media all and (max-width: 630px) {
+@media all and (min-width: 551px) and (max-width: 630px) {
 
   .block img{
     width: 140px;
@@ -563,4 +590,36 @@ p{
     height: 38px;
     margin-left: 8px;
   }
+}
+
+@media all and (max-width: 550px){
+
+
+  .block img{
+    width: 190px;
+    height: 190px;
+  }
+
+  #container2{
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    }
+
+    ::-webkit-scrollbar {
+     display: none;
+    }
+
+
+
+  
+
+  #upgrade{
+    width: 42%;
+    font-size: 12px;
+    padding: 12px 0;
+
+  }
+
+
 }
