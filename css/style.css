@@ -344,14 +344,14 @@
   margin-bottom: 20px;
 }
 
-#container3{
+.container3{
   width: 100%;
   margin-top: 5px;
   display: flex;
   justify-content: flex-start;
 }
 
-#container3 .block{
+.container3 .block{
   margin: auto 13px;
 }
 
